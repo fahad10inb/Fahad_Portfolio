@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+# Vite React Shadcn TS Portfolio
 
-## Project info
+This is a personal portfolio website built with React, TypeScript, and Tailwind CSS. It showcases the professional profile, skills, experience, projects, and contact information of Fahad Fasalu Rahiman, an AI Engineer and Full Stack Developer.
 
-**URL**: https://lovable.dev/projects/939cbc97-66bf-4a52-8ab6-26448ed4bf87
+## Features
 
-## How can I edit this code?
+- Responsive single-page application with smooth scrolling navigation
+- Sections include Home (Hero), About, Experience & Projects, Education, and Contact
+- Interactive UI components built with Radix UI and custom styling
+- Integration of React Query for data management
+- Notification toasters for user feedback
+- Social media links and contact details for easy connection
+- Modern design with animated backgrounds and gradient effects
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/939cbc97-66bf-4a52-8ab6-26448ed4bf87) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+- React 18
 - TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Vite (build tool)
+- Tailwind CSS (utility-first CSS framework)
+- Radix UI (accessible UI primitives)
+- React Router (client-side routing)
+- React Query (data fetching and caching)
+- Lucide React (icons)
+- Sonner (toaster notifications)
+- Various other libraries for forms, charts, carousels, and animations
 
-## How can I deploy this project?
+## Installation
 
-Simply open [Lovable](https://lovable.dev/projects/939cbc97-66bf-4a52-8ab6-26448ed4bf87) and click on Share -> Publish.
+1. Clone the repository:
 
-## Can I connect a custom domain to my Lovable project?
+   ```bash
+   git clone <repository-url>
+   cd vite_react_shadcn_ts
+   ```
 
-Yes, you can!
+2. Install dependencies:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+   ```bash
+   npm install
+   ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the port shown in the terminal).
+
+## Project Structure
+
+- `src/components/` - Reusable UI components and sections (Hero, About, Experience, Contact, etc.)
+- `src/pages/` - Application pages (Index, NotFound)
+- `src/lib/` - Utility functions
+- `src/hooks/` - Custom React hooks
+- `public/` - Static assets like images and icons
+- Configuration files for ESLint, Tailwind CSS, TypeScript, and Vite
+
+## Usage
+
+Navigate through the portfolio using the top navigation bar. Each section provides detailed information about the developer's background, skills, projects, and ways to get in touch.
+
+## Contact
+
+- Email: fahadrahiman10@gmail.com
+- LinkedIn: [https://www.linkedin.com/in/fahad-rahiman-3131a9255](https://www.linkedin.com/in/fahad-rahiman-3131a9255)
+- GitHub: [https://github.com/fahad10inb](https://github.com/fahad10inb)
+
+## License
+
+This project is private and not publicly licensed.
+
+---
+
+*Built with passion by Fahad Fasalu Rahiman.*

@@ -25,21 +25,37 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => item.id);
-      const currentSection = sections.find(section => {
-        const element = section === "hero" ? document.documentElement : document.getElementById(section);
+      const scrollPosition = window.scrollY + 200; // Offset for better detection
+      
+      // Check if we're at the top of the page (hero section)
+      if (window.scrollY < 100) {
+        setActiveSection("hero");
+        return;
+      }
+
+      // Check other sections
+      const sections = navItems.slice(1); // Skip hero since we handled it above
+      let currentSection = "hero"; // Default fallback
+      
+      for (const item of sections) {
+        const element = document.getElementById(item.id);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
+          const elementTop = rect.top + window.scrollY;
+          
+          // If the scroll position is past this section's start
+          if (scrollPosition >= elementTop) {
+            currentSection = item.id;
+          }
         }
-        return false;
-      });
-      
-      if (currentSection) {
-        setActiveSection(currentSection);
       }
+      
+      setActiveSection(currentSection);
     };
 
+    // Initial check
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -111,7 +127,7 @@ const Navigation = () => {
         <div 
           className="h-full bg-gradient-primary transition-all duration-300"
           style={{
-            width: `${(window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%`
+            width: `${Math.min(100, (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100)}%`
           }}
         />
       </div>
