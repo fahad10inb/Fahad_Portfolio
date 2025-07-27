@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 animate-fade-in-up max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
             <div className="glass-effect p-4 rounded-lg glow-effect">
               <div className="text-2xl font-bold text-primary">5+</div>
               <div className="text-sm text-muted-foreground">Projects</div>
@@ -43,10 +43,6 @@ const Hero = () => {
             <div className="glass-effect p-4 rounded-lg glow-effect">
               <div className="text-2xl font-bold text-primary">9.2</div>
               <div className="text-sm text-muted-foreground">CGPA</div>
-            </div>
-            <div className="glass-effect p-4 rounded-lg glow-effect">
-              <div className="text-2xl font-bold text-primary">Top 12</div>
-              <div className="text-sm text-muted-foreground">AI/ML Rank</div>
             </div>
           </div>
 

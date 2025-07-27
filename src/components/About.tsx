@@ -52,7 +52,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Currently working as an AI Engineer at a stealth startup while pursuing B.Tech in Computer Science Engineering. 
+              Currently pursuing B.Tech in Computer Science Engineering. 
               Passionate about leveraging technology to solve real-world problems through innovative AI and ML solutions.
             </p>
           </div>

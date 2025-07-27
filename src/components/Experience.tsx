@@ -7,9 +7,9 @@ const Experience = () => {
     {
       company: "Stealth Startup",
       role: "AI Engineer",
-      duration: "Ongoing",
-      type: "Current Position",
-      description: "Currently working as an AI Engineer, assisting in developing an English Learning Assistant App.",
+      duration: "2 Months",
+      type: "AI Intern",
+      description: "Worked as an  AI Intern, assisting in developing an English Learning Assistant App.",
       technologies: ["Flutter", "Whisper", "Hugging Face Transformers", "Python"],
       highlights: [
         "Developing AI-powered English learning solutions",
@@ -23,16 +23,16 @@ const Experience = () => {
     {
       name: "Finsight",
       role: "Software Developer",
-      duration: "Ongoing",
-      teamSize: "2",
+      duration: "3 Months",
+      teamSize: "4",
       description: "Played a key role in creating Finsight, a platform for analyzing financial data and providing investment insights.",
       technologies: ["Yahoo Finance API", "Supabase", "Machine Learning Model", "React", "Python"]
     },
     {
       name: "SyncTrek",
       role: "Full Stack Developer",
-      duration: "2 Months",
-      teamSize: "4",
+      duration: "Ongoing",
+      teamSize: "2",
       description: "Actively working on developing SyncTrek, an AI-based itinerary preparation mobile application, that allows users to generate itineraries based on hotel, travel, and food recommendations.",
       technologies: ["Python", "Flutter"],
       githubUrl: "https://github.com/fahad10inb/SyncTrek"

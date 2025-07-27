@@ -20,7 +20,7 @@ const Portfolio = () => {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <p className="text-muted-foreground">
-              © 2024 Fahad Fasalu Rahiman. Built with React, TypeScript & Tailwind CSS.
+              © 2025 Fahad Fasalu Rahiman. Built with React, TypeScript & Tailwind CSS.
             </p>
             <p className="text-sm text-muted-foreground mt-2">
               Designed with passion for innovation and excellence.
