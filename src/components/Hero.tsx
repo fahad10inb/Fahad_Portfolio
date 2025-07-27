@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -90,12 +90,6 @@ const Hero = () => {
             >
               <Mail className="h-6 w-6 group-hover:text-primary transition-colors" />
             </a>
-            <button 
-              className="p-3 glass-effect rounded-full hover:bg-primary/20 transition-all duration-300 glow-effect group"
-              onClick={() => window.open('#', '_blank')}
-            >
-              <Download className="h-6 w-6 group-hover:text-primary transition-colors" />
-            </button>
           </div>
 
           {/* Scroll Indicator */}
