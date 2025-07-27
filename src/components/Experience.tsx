@@ -16,23 +16,18 @@ const Experience = () => {
         "Implementing speech recognition and NLP features",
         "Working with cutting-edge transformer models"
       ]
-    },
-    {
-      company: "Finsight",
-      role: "Software Developer",
-      duration: "Ongoing",
-      type: "Team Size: 2",
-      description: "Played a key role in creating Finsight, a platform for analyzing financial data and providing investment insights.",
-      technologies: ["Yahoo Finance API", "Supabase", "Machine Learning Model", "React", "Python"],
-      highlights: [
-        "Built comprehensive financial analysis platform",
-        "Integrated real-time market data",
-        "Developed ML models for investment insights"
-      ]
     }
   ];
 
   const projects = [
+    {
+      name: "Finsight",
+      role: "Software Developer",
+      duration: "Ongoing",
+      teamSize: "2",
+      description: "Played a key role in creating Finsight, a platform for analyzing financial data and providing investment insights.",
+      technologies: ["Yahoo Finance API", "Supabase", "Machine Learning Model", "React", "Python"]
+    },
     {
       name: "SyncTrek",
       role: "Full Stack Developer",
@@ -76,7 +71,7 @@ const Experience = () => {
             <Building2 className="h-6 w-6 text-primary" />
             Work Experience
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {experiences.map((exp, index) => (
               <Card key={index} className="p-6 glass-effect border-primary/20 hover:border-primary/40 transition-all duration-300 glow-effect">
                 <div className="flex justify-between items-start mb-4">

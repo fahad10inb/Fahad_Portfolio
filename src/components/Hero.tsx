@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
-import fahadAvatar from "@/assets/fahad-avatar.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,18 +17,6 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative group">
-              <img 
-                src={fahadAvatar} 
-                alt="Fahad Fasalu Rahiman"
-                className="w-40 h-40 rounded-full border-4 border-primary/50 shadow-intense group-hover:scale-105 transition-transform duration-300 pulse-glow"
-              />
-              <div className="absolute inset-0 bg-gradient-primary rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-            </div>
-          </div>
-
           {/* Name and Title */}
           <div className="mb-6 animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
