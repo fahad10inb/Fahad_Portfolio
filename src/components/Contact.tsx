@@ -55,84 +55,104 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
-                <p className="text-muted-foreground mb-8">
-                  Currently open to exciting opportunities in AI/ML, software development, and innovative tech projects. 
-                  Feel free to reach out for collaborations, internships, or just to have a tech conversation!
-                </p>
-              </div>
+              {/* Left Column - Introduction */}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
+                  <p className="text-muted-foreground mb-8">
+                    Currently open to exciting opportunities in AI/ML, software development, and innovative tech projects. 
+                    Feel free to reach out for collaborations, internships, or just to have a tech conversation!
+                  </p>
+                </div>
 
-              {/* Contact Details */}
-              <div className="space-y-4">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center gap-4">
-                    <div className="p-3 bg-gradient-primary rounded-lg text-primary-foreground">
-                      {info.icon}
+                {/* Contact Details */}
+                <div className="space-y-4">
+                  {contactInfo.map((info, index) => (
+                    <div key={index} className="flex items-center gap-4">
+                      <div className="p-3 bg-gradient-primary rounded-lg text-primary-foreground">
+                        {info.icon}
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">{info.label}</p>
+                        {info.href ? (
+                          <a 
+                            href={info.href}
+                            className="font-medium text-foreground hover:text-primary transition-colors"
+                          >
+                            {info.value}
+                          </a>
+                        ) : (
+                          <p className="font-medium text-foreground">{info.value}</p>
+                        )}
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">{info.label}</p>
-                      {info.href ? (
-                        <a 
-                          href={info.href}
-                          className="font-medium text-foreground hover:text-primary transition-colors"
-                        >
-                          {info.value}
-                        </a>
-                      ) : (
-                        <p className="font-medium text-foreground">{info.value}</p>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Social Links */}
-              <div>
-                <h4 className="font-semibold mb-4">Follow Me</h4>
-                <div className="flex gap-4">
-                  {socialLinks.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`p-3 glass-effect rounded-lg hover:bg-primary/20 transition-all duration-300 glow-effect ${social.color}`}
-                      title={social.label}
-                    >
-                      {social.icon}
-                    </a>
                   ))}
                 </div>
-              </div>
 
-              {/* Quick Stats */}
-              <Card className="p-6 glass-effect border-primary/20">
-                <h4 className="font-semibold mb-4">Quick Facts</h4>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <span className="text-muted-foreground">Location:</span>
-                    <p className="font-medium">Kochi, India</p>
-                  </div>
-                  <div>
-                    <span className="text-muted-foreground">Experience:</span>
-                    <p className="font-medium">2+ Years</p>
-                  </div>
-                  <div>
-                    <span className="text-muted-foreground">Specialization:</span>
-                    <p className="font-medium">AI/ML & Full Stack</p>
-                  </div>
-                  <div>
-                    <span className="text-muted-foreground">Availability:</span>
-                    <p className="font-medium text-green-400">Open to Opportunities</p>
+                {/* Social Links */}
+                <div>
+                  <h4 className="font-semibold mb-4">Follow Me</h4>
+                  <div className="flex gap-4">
+                    {socialLinks.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`p-3 glass-effect rounded-lg hover:bg-primary/20 transition-all duration-300 glow-effect ${social.color}`}
+                        title={social.label}
+                      >
+                        {social.icon}
+                      </a>
+                    ))}
                   </div>
                 </div>
-              </Card>
-            </div>
+              </div>
+
+              {/* Right Column - Quick Facts */}
+              <div className="space-y-8">
+                <Card className="p-6 glass-effect border-primary/20">
+                  <h4 className="font-semibold mb-4">Quick Facts</h4>
+                  <div className="grid grid-cols-1 gap-4 text-sm">
+                    <div>
+                      <span className="text-muted-foreground">Location:</span>
+                      <p className="font-medium">Kochi, India</p>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">Experience:</span>
+                      <p className="font-medium">2+ Years</p>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">Specialization:</span>
+                      <p className="font-medium">AI/ML & Full Stack</p>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">Availability:</span>
+                      <p className="font-medium text-green-400">Open to Opportunities</p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6 glass-effect border-primary/20">
+                  <h4 className="font-semibold mb-4">Current Focus</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">AI Engineering at Stealth Startup</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-accent rounded-full"></div>
+                      <span className="text-sm">B.Tech CSE Final Year</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Open Source Contributions</span>
+                    </div>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
