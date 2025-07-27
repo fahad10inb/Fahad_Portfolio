@@ -22,9 +22,7 @@ const Portfolio = () => {
             <p className="text-muted-foreground">
               © 2025 Fahad Fasalu Rahiman. Built with React, TypeScript & Tailwind CSS.
             </p>
-            <p className="text-sm text-muted-foreground mt-2">
-              Designed with passion for innovation and excellence.
-            </p>
+    
           </div>
         </div>
       </footer>

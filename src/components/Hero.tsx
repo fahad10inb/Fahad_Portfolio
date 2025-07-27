@@ -7,7 +7,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero pt-20 md:pt-0">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 sm:top-20 left-4 sm:left-20 w-48 sm:w-72 h-48 sm:h-72 bg-gradient-glow rounded-full blur-3xl opacity-30 floating-animation"></div>
@@ -15,8 +15,8 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/4 sm:left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-accent/20 rounded-full blur-2xl opacity-40 floating-animation" style={{ animationDelay: '4s' }}></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-full">
+        <div className="text-center max-w-4xl mx-auto pr-4 md:pr-0">
           {/* Name and Title */}
           <div className="mb-6 sm:mb-8 animate-fade-in-up">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-3 sm:mb-4 gradient-text px-2">

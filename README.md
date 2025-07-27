@@ -1,76 +1,47 @@
-# Vite React Shadcn TS Portfolio
+# Fahad Fasalu Rahiman - Personal Portfolio
 
-This is a personal portfolio website built with React, TypeScript, and Tailwind CSS. It showcases the professional profile, skills, experience, projects, and contact information of Fahad Fasalu Rahiman, an AI Engineer and Full Stack Developer.
+Welcome to my personal portfolio website. I am Fahad Fasalu Rahiman, an AI Engineer and Full Stack Developer currently pursuing a B.Tech in Computer Science Engineering. This portfolio showcases my skills, experience, projects, and ways to get in touch.
 
-## Features
+## About Me
 
-- Responsive single-page application with smooth scrolling navigation
-- Sections include Home (Hero), About, Experience & Projects, Education, and Contact
-- Interactive UI components built with Radix UI and custom styling
-- Integration of React Query for data management
-- Notification toasters for user feedback
-- Social media links and contact details for easy connection
-- Modern design with animated backgrounds and gradient effects
+- AI Enthusiast passionate about machine learning and AI-driven solutions.
+- Full Stack Developer proficient in frontend and backend technologies.
+- Innovation-focused with a drive to implement creative solutions.
+- Strong team player with leadership and communication skills.
+- Results-driven with a proven track record of achievements.
+- Quick learner with multiple certifications and continuous growth.
 
-## Technologies Used
+## Skills
 
-- React 18
-- TypeScript
-- Vite (build tool)
-- Tailwind CSS (utility-first CSS framework)
-- Radix UI (accessible UI primitives)
-- React Router (client-side routing)
-- React Query (data fetching and caching)
-- Lucide React (icons)
-- Sonner (toaster notifications)
-- Various other libraries for forms, charts, carousels, and animations
+### Technical Skills
+Python, Machine Learning, React, MongoDB, SQL, Java, C, Git, CSS, Node.js, Flutter
 
-## Installation
+### Soft Skills
+Leadership, Communication, Time Management, Conflict Resolution, Teamwork, Critical Thinking
 
-1. Clone the repository:
+### Core Interests
+Machine Learning, Data Science, Deep Learning, Problem Solving
 
-   ```bash
-   git clone <repository-url>
-   cd vite_react_shadcn_ts
-   ```
+## Experience & Projects
 
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5173` (or the port shown in the terminal).
-
-## Project Structure
-
-- `src/components/` - Reusable UI components and sections (Hero, About, Experience, Contact, etc.)
-- `src/pages/` - Application pages (Index, NotFound)
-- `src/lib/` - Utility functions
-- `src/hooks/` - Custom React hooks
-- `public/` - Static assets like images and icons
-- Configuration files for ESLint, Tailwind CSS, TypeScript, and Vite
-
-## Usage
-
-Navigate through the portfolio using the top navigation bar. Each section provides detailed information about the developer's background, skills, projects, and ways to get in touch.
+### Work Experience
+- AI Engineer Intern at Stealth Startup: Developed AI-powered English learning solutions using Flutter, Whisper, Hugging Face Transformers, and Python.
+  
+### Featured Projects
+- **Finsight**: Financial data analysis platform with investment insights. Technologies: Yahoo Finance API, Supabase, Machine Learning, React, Python.
+- **SyncTrek**: AI-based itinerary preparation mobile app. Technologies: Python, Flutter. [GitHub](https://github.com/fahad10inb/SyncTrek)
+- **SmartSync**: Automated traffic management system using machine learning and real-time data. Technologies: Python, Yolo, TensorFlow, OpenCV.
+- **Group.ai**: AI-driven chatbot system for personalized recommendations using NLP and cloud technologies. Technologies: IBM Watson Assistant, IBM Cloud, React.
 
 ## Contact
 
+Feel free to reach out for collaborations, internships, or tech conversations!
+
 - Email: fahadrahiman10@gmail.com
+- Phone: +91 9778367899
 - LinkedIn: [https://www.linkedin.com/in/fahad-rahiman-3131a9255](https://www.linkedin.com/in/fahad-rahiman-3131a9255)
 - GitHub: [https://github.com/fahad10inb](https://github.com/fahad10inb)
 
-## License
-
-This project is private and not publicly licensed.
-
 ---
 
-*Built with passion by Fahad Fasalu Rahiman.*
+*Thank you for visiting my portfolio!*
