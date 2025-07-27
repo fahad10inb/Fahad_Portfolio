@@ -33,7 +33,7 @@ const Hero = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 animate-fade-in-up max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
             <div className="glass-effect p-4 rounded-lg glow-effect">
-              <div className="text-2xl font-bold text-primary">5+</div>
+              <div className="text-2xl font-bold text-primary">10+</div>
               <div className="text-sm text-muted-foreground">Projects</div>
             </div>
             <div className="glass-effect p-4 rounded-lg glow-effect">
